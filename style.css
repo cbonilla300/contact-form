@@ -10,18 +10,22 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 100vh; 
 }
-/* label {
-    display: inline-block;
-    
-} */
+
+ h1 {
+    margin-bottom: 20px;
+ }
  form {
+    font-family: Karla, sans-serif;
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 750px;
     border: 1px solid white;
+    border-radius: 15px;
     max-width: 600px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
  }
  .name-label {
     display: flex;
@@ -29,4 +33,69 @@ body {
  }
  .email-input input {
     width: 100%;
+ }
+
+ div,textarea {
+    margin-bottom: 15px;
+ }
+textarea {
+    padding: .5rem;
+    border-color: hsl(169, 82%, 27%);;
+}
+ input {
+    padding: .7rem;
+    border-color: hsl(169, 82%, 27%);
+   
+ }
+ label[for = "email"] {
+    margin-bottom: 10px;
+ }
+ label[for="last-name"] {
+    flex-grow: .48;
+ }
+ .name-input input:first-child {
+    margin-right: 10px;
+    
+ }
+ input[type="checkbox"] {
+    margin-right: 15px;
+    margin-bottom: 25px;
+ }
+ button[type="submit"] {
+    background-color: hsl(169, 82%, 27%);
+    padding: .5rem 0;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    border-radius: 5px;
+    border-color: transparent;
+ }
+ .query-options {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+ }
+label[for="support"], label[for="general"] {
+    border: 1px solid black;
+    padding: .5rem;
+}
+label[for="support"] {
+    flex-grow: .4;
+    border-color: hsl(169, 82%, 27%);;
+}
+label[for="general"] {
+    flex-grow: .4;
+    border-color: hsl(169, 82%, 27%);;
+}
+label[for="message"] {
+    margin-bottom: 10px;
+    
+ }
+input[type="radio"]{
+    margin: 0 10px 0 10px;
+    
+ }
+label.required::after{
+    content: '*';
+    margin-left: 5px;
+    color: hsl(169, 82%, 27%);;
  }

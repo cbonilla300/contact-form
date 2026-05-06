@@ -20,8 +20,8 @@
   <form action="">
     <h1>Contact Us</h1>
     <div class="name-label">
-      <label for="first-name">First Name</label>
-    <label for="last-name">last Name</label>
+      <label for="first-name" class="required">First Name</label>
+      <label for="last-name" class="required">Last Name</label>
     </div>
     
     <div class="name-input">
@@ -30,21 +30,21 @@
       >
     </div>
 
-    <label for="email">Email Address</label>
+    <label for="email" class="required">Email Address</label>
     <div class="email-input">
       <input required type="email" name="email" id="email">
     </div>
 
-    <label for="query">Query Type</label>
+    <label class="required" >Query Type</label>
     <div class="query-options">
-      <input class="radio" type="radio" name="query" id="general-enquiry" placeholder="General Enquiry">
-      <input class="radio" type="radio" name="quer" id="support-request" placeholder="Support Request">
+      <label for="general"><input class="radio " type="radio" name="query" id="general" >General Enquiry</label>
+      <label for="support"><input class="radio " type="radio" name="query" id="support">Support Request</label>
     </div>
 
     <label for="message">Message</label>
-    <textarea name="message" id="message"></textarea>
+    <textarea name="message" id="message" cols="4" rows="5" required></textarea>
 
-    <label for=""><input type="checkbox" name="" id="">I consent to being contacted by the team</label>
+    <label for="consent"><input type="checkbox" name="consent" id="consent" required>I consent to being contacted by the team</label>
     <button type="submit">Submit</button>
   </form>
 
