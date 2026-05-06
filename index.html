@@ -16,33 +16,52 @@
 </head>
 <body>
 
-  Contact Us
+  
+  <form action="">
+    <h1>Contact Us</h1>
+    <div class="name-label">
+      <label for="first-name">First Name</label>
+    <label for="last-name">last Name</label>
+    </div>
+    
+    <div class="name-input">
+      <input type="text" name="first-name" id="first-name" required>
+      <input type="text" name="last-name" id="last-name" required
+      >
+    </div>
 
-  First Name
-  This field is required
+    <label for="email">Email Address</label>
+    <div class="email-input">
+      <input required type="email" name="email" id="email">
+    </div>
 
-  Last Name
-  This field is required
+    <label for="query">Query Type</label>
+    <div class="query-options">
+      <input class="radio" type="radio" name="query" id="general-enquiry" placeholder="General Enquiry">
+      <input class="radio" type="radio" name="quer" id="support-request" placeholder="Support Request">
+    </div>
 
-  Email Address
-  Please enter a valid email address
-  This field is required
+    <label for="message">Message</label>
+    <textarea name="message" id="message"></textarea>
 
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
+    <label for=""><input type="checkbox" name="" id="">I consent to being contacted by the team</label>
+    <button type="submit">Submit</button>
+  </form>
 
-  Message
-  This field is required
 
-  I consent to being contacted by the team
+  
+
+  
+
+  
+
+<!--   
   To submit this form, please consent to being contacted
 
-  Submit
+  
 
   Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
+  Thanks for completing the form. We'll be in touch soon! -->
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 

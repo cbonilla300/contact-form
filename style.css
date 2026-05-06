@@ -4,3 +4,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color:  hsl(148, 38%, 91%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+/* label {
+    display: inline-block;
+    
+} */
+ form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    border: 1px solid white;
+    max-width: 600px;
+ }
+ .name-label {
+    display: flex;
+    justify-content: space-between;
+ }
+ .email-input input {
+    width: 100%;
+ }
