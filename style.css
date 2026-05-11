@@ -1,101 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background-color:  hsl(148, 38%, 91%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; 
+  background-color: hsl(148, 38%, 91%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-height: 100vh;
+  margin: 20px 0;
 }
 
- h1 {
-    margin-bottom: 20px;
- }
- form {
-    font-family: Karla, sans-serif;
-    display: flex;
-    flex-direction: column;
-    max-width: 750px;
-    border: 1px solid white;
-    border-radius: 15px;
-    max-width: 600px;
-    background-color: hsl(0, 0%, 100%);
-    padding: 1.5rem;
- }
- .name-label {
-    display: flex;
-    justify-content: space-between;
- }
- .email-input input {
-    width: 100%;
- }
+h1 {
+  margin-bottom: 20px;
+}
+form {
+  font-family: Karla, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-width: 600px;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+}
+.name-inputs  {
+  display: flex;
+  
+  width: 100%;
+}
+.first-name-input {
+  margin-right: 20px;
+}
+.first-name-input, .last-name-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.name-label {
+  margin-bottom: 10px;
+}
+.email-input input {
+  width: 100%;
+}
 
- div,textarea {
-    margin-bottom: 15px;
- }
+div,
 textarea {
-    padding: .5rem;
-    border-color: hsl(169, 82%, 27%);;
+  margin-bottom: 15px;
 }
- input {
-    padding: .7rem;
-    border-color: hsl(169, 82%, 27%);
-   
- }
- label[for = "email"] {
-    margin-bottom: 10px;
- }
- label[for="last-name"] {
-    flex-grow: .48;
- }
- .name-input input:first-child {
-    margin-right: 10px;
-    
- }
- input[type="checkbox"] {
-    margin-right: 15px;
-    margin-bottom: 25px;
- }
- button[type="submit"] {
-    background-color: hsl(169, 82%, 27%);
-    padding: .5rem 0;
-    color: hsl(0, 0%, 100%);
-    font-weight: 400;
-    border-radius: 5px;
-    border-color: transparent;
- }
- .query-options {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
- }
-label[for="support"], label[for="general"] {
-    border: 1px solid black;
-    padding: .5rem;
+textarea {
+  padding: 0.5rem;
+  border-color: hsl(169, 82%, 27%);
+}
+input {
+  padding: 0.7rem;
+  border-color: hsl(169, 82%, 27%);
+  border-radius: 8px;
+}
+label,textarea {
+    border-radius: 8px;
+}
+label[for="email"] {
+  margin-bottom: 10px;
+}
+label[for="last-name"] {
+  flex-grow: 0.48;
+}
+
+input[type="checkbox"] {
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+button[type="submit"] {
+  background-color: hsl(169, 82%, 27%);
+  padding: 0.5rem 0;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  border-radius: 5px;
+  border-color: transparent;
+}
+.query-options {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+label[for="support"],
+label[for="general"] {
+  border: 1px solid hsl(169, 82%, 27%); ;
+  padding: 0.5rem;
 }
 label[for="support"] {
-    flex-grow: .4;
-    border-color: hsl(169, 82%, 27%);;
+  flex-grow: 0.4;
+  border-color: hsl(169, 82%, 27%);
 }
 label[for="general"] {
-    flex-grow: .4;
-    border-color: hsl(169, 82%, 27%);;
+  flex-grow: 0.4;
+  border-color: hsl(169, 82%, 27%);
 }
 label[for="message"] {
-    margin-bottom: 10px;
-    
- }
-input[type="radio"]{
-    margin: 0 10px 0 10px;
-    
- }
-label.required::after{
-    content: '*';
-    margin-left: 5px;
-    color: hsl(169, 82%, 27%);;
- }
+  margin-bottom: 10px;
+}
+input[type="radio"] {
+  margin: 0 10px 0 10px;
+}
+label.required::after {
+  content: "*";
+  margin-left: 5px;
+  color: hsl(169, 82%, 27%);
+}

@@ -19,16 +19,18 @@
   
   <form action="">
     <h1>Contact Us</h1>
-    <div class="name-label">
-      <label for="first-name" class="required">First Name</label>
-      <label for="last-name" class="required">Last Name</label>
-    </div>
+    <div class="name-inputs">
+      <div class="first-name-input">
+        <label for="first-name" class="required name-label">First Name</label>
+        <input type="text" name="first-name" id="first-name" required> 
+      </div>
     
-    <div class="name-input">
-      <input type="text" name="first-name" id="first-name" required>
-      <input type="text" name="last-name" id="last-name" required
-      >
+      <div class="last-name-input">
+        <label for="last-name" class="required name-label">Last Name</label>
+        <input type="text" name="last-name" id="last-name" required>
+      </div>
     </div>
+   
 
     <label for="email" class="required">Email Address</label>
     <div class="email-input">
