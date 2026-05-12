@@ -67,15 +67,6 @@ label[for="email"] {
   margin-bottom: 10px;
 }
 
-button[type="submit"] {
-  background-color: hsl(169, 82%, 27%);
-  padding: 0.5rem 0;
-  color: hsl(0, 0%, 100%);
-  font-weight: 400;
-  border-radius: 5px;
-  border-color: transparent;
-  letter-spacing: 2px;
-}
 legend {
   margin-bottom: 10px;
 }
@@ -119,6 +110,15 @@ label.required::after, legend.required::after {
 }
 #consent {
   transform: scale(1.5);
+}
+button[type="submit"] {
+  background-color: hsl(169, 82%, 27%);
+  padding: .8rem 0;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  border-radius: 5px;
+  border-color: transparent;
+  letter-spacing: 2px;
 }
 @media (max-width: 376px) {
   body {
